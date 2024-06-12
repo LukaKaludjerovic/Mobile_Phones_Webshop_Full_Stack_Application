@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../../General/index.css">
+        <title>iPhone 15 Pro - 5G Shop</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="header" class="row">
+                <div class="col-sm-9">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a href="../../Customer/home-customer.html" class="navbar-brand" style="width: 152px; height: 46px;">
+                            <img src="../../Slike/logo.png" alt="Logo" style="width: 100%;">
+                        </a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../Customer/home-customer.html" class="nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Customer/about-customer.html" class="nav-link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Customer/shop-customer.html" class="nav-link active disabled">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Customer/contact-customer.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-3">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../Customer/cart.html" class="nav-link">
+                                    Cart
+                                    <span id="cart-badge" class="badge bg-secondary">
+                                        3
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Customer/dashboard-customer.html" class="nav-link">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../General/index.html" class="nav-link">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div id="product-image" class="col-sm-3 text-center">
+                    <img src="../../Slike/iphone15pro.png" alt="iPhone 15 Pro" width="100%">
+                </div>
+                <div id="product-description" class="col-sm-3 text-center">
+                    <b style="font-size: 20px;">iPhone 15 Pro</b>
+                    <br><br>
+                    Display:&emsp;6.1 inch
+                    <br><br>
+                    Weight:&emsp;187 grams
+                    <br><br>
+                    Chip:&emsp;Apple A17 Pro
+                    <br><br>
+                    Choose color:&emsp;
+                    <select>
+                        <option value="Titanium">Titanium</option>
+                        <option value="Blue">Blue</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br>
+                    Choose storage:&emsp;
+                    <select>
+                        <option value="128GB">128GB</option>
+                        <option value="256GB">256GB</option>
+                        <option value="512GB">512GB</option>
+                        <option value="1024GB">1024GB</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <b style="font-size: 20px;">Available resellers:</b>
+                    <br>
+                    <input type="checkbox" name="recommendedResellers" id="recommendedResellers">
+                    <label for="recommendedResellers">Show recommended resellers only</label>
+                    <div id="product-resellers">
+                        <br>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;128GB&emsp;&emsp;Titanium&emsp;&emsp;1239&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;256GB&emsp;&emsp;Titanium&emsp;&emsp;1369&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;512GB&emsp;&emsp;Titanium&emsp;&emsp;1619&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;1024GB&emsp;&emsp;Titanium&emsp;&emsp;1869&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;128GB&emsp;&emsp;Blue&emsp;&emsp;1239&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;256GB&emsp;&emsp;Blue&emsp;&emsp;1369&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;512GB&emsp;&emsp;Blue&emsp;&emsp;1619&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;1024GB&emsp;&emsp;Blue&emsp;&emsp;1869&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;128GB&emsp;&emsp;White&emsp;&emsp;1239&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;256GB&emsp;&emsp;White&emsp;&emsp;1369&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;512GB&emsp;&emsp;White&emsp;&emsp;1619&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;1024GB&emsp;&emsp;White&emsp;&emsp;1869&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;128GB&emsp;&emsp;Black&emsp;&emsp;1239&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;256GB&emsp;&emsp;Black&emsp;&emsp;1369&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;512GB&emsp;&emsp;Black&emsp;&emsp;1619&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <hr>
+                        <div class="reseller">
+                            Apple&emsp;&emsp;1024GB&emsp;&emsp;Black&emsp;&emsp;1869&euro;&emsp;&emsp;
+                            <input type="button" value="Add to cart" onclick="add_to_cart()">
+                        </div>
+                        <script>
+                            function add_to_cart(){
+                                var cart_badge = document.getElementById("cart-badge");
+                                var current_value = parseInt(cart_badge.innerText);
+                                cart_badge.innerText = current_value + 1;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="footer" class="row">
+                <div class="col-sm-12 text-center">
+                    &#169; 5G Shop 2024
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+{
+  "id": "114ec9c0-98f6-429c-b658-4e8b67b21ff7",
+  "version": "2.0",
+  "name": "PSI  Selenium - Vukan",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "a6d1ca48-2fed-4425-a394-6aca44bf2cfb",
+    "name": "Login",
+    "commands": [{
+      "id": "62447b41-e85e-42d1-9c60-cd955bc75478",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "315075bd-1d99-4970-98aa-080c86163aac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1232x663",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "430c3868-e15c-46be-99ff-0dbb7ad3a019",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=#navbar2 .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//ul[@id='navbar2']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71cb6f85-0488-4809-8ad2-3bf9e7b26410",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.textbox:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='exiting-user']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "bd494a04-d856-45ad-97d1-149ad0697b56",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.textbox:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='exiting-user']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "335e33db-0a83-4dcb-851c-901b88811481",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.textbox:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='exiting-user']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123123123"
+    }, {
+      "id": "812758bf-32c2-45ed-86ed-8b2ff29dbddc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#exiting-user > input:nth-child(9)",
+      "targets": [
+        ["css=#exiting-user > input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//form[@id='exiting-user']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad787701-7fe0-41b2-82c1-5e8318a286aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=#navbar2 > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='navbar2']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'dashboard-admin')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "16a9a843-e6be-4841-943d-9b45163bbacc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6d1ca48-2fed-4425-a394-6aca44bf2cfb"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

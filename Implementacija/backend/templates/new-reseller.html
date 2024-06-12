@@ -1,0 +1,93 @@
+{% load static %}
+<!-- author: Luka Kaludjerovic 0041-2021 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'javascript/header.js' %}"></script>
+        <script src="{% static 'javascript/login.js' %}"></script>
+
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <title>New reseller - 5G Shop</title>
+    </head>
+    <body>
+        <div class="container">
+            <!--HEADER-->
+            <div id="header" class="row">
+                <div id="header-left" class="col-sm-11">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a href="home" class="navbar-brand" style="width: 152px; height: 46px;">
+                              <img src="{% static 'imgs/logo.png' %}" alt="Logo" style="width: 100%;">
+                        </a>
+                        <ul id="navbar1" class="navbar-nav">
+
+                        </ul>
+                    </nav>
+                </div>
+                <div id="header-right" class="col-sm-1">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <ul id="navbar2" class="navbar-nav">
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <!--BODY-->
+            <div id="body-new-user" class="row body">
+                <div class="col-sm-12 text-center">
+                    <form onsubmit="new_reseller()">
+                        *Enter company name:&emsp;
+                        <input type="text" name="company_name" required placeholder="example: FUM Shop" autofocus class="textbox">
+                        <br><br>
+                        *Enter PIB:&emsp;
+                        <input type="text" name="pib" required placeholder="example: 12345678" class="textbox">
+                        <br><br>
+                        Enter City:&emsp;
+                        <input type="text" name="city" placeholder="example: Belgrade" class="textbox">
+                        <br><br>
+                        Enter Street:&emsp;
+                        <input type="text" name="street" placeholder="example: Bulevar Kralja Aleksandra" class="textbox">
+                        <br><br>
+                        Enter Street Number :&emsp;
+                        <input type="text" name="number" placeholder="example: 5" class="textbox">
+                        <br><br>
+                        Enter Postal Code:&emsp;
+                        <input type="text" name="postal_code" placeholder="example: 11000" class="textbox">
+                        <br><br>
+
+                        *Enter official email:&emsp;
+                        <input type="text" name="email" required placeholder="example: fum@fum.com" class="textbox">
+                        <br><br>
+                        Create username:&emsp;
+                        <input type="text" name="username" placeholder="example: fumshop" class="textbox">
+                        <br><br>
+                        *Enter phone number:&emsp;
+                        <input type="text" name="phonenumber" placeholder="example: +381601234567" class="textbox">
+                        <br><br>
+                        *Create password:&emsp;
+                        <input type="password" name="password1" required minlength="8" class="textbox">
+                        <br><br>
+                        *Repeat password:&emsp;
+                        <input type="password" name="password2" required minlength="8" class="textbox">
+                        <br>
+                        <p style="font-size: 12px; color: red; font-style: italic;">If you don't choose username manually, your email will be your username</p>
+                        <p style="font-size: 12px; color: red; font-style: italic;">Fields marked with * are mandatory!</p>
+                        <input type="reset" value="Back" onclick="window.location.href = '/login';">
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <!--FOOTER-->
+            <div id="footer" class="row">
+                <div class="col-sm-12 text-center">
+                    &#169; 5G Shop 2024
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

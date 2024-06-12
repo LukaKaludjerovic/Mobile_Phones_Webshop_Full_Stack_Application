@@ -1,0 +1,92 @@
+#header {
+    font-size: 17px;
+}
+
+#footer {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#body-home, #body-about, #body-shop, #body-contact {
+    font-size: 15px;
+}
+
+#body-existing-user, #body-new-user {
+    font-size: 15px;
+}
+
+#order, #checkout, #delivery, #payment {
+    font-size: 15px;
+}
+
+#order {
+    font-weight: bold;
+}
+
+#body-shop-left {
+    font-size: 15px;
+    border-right: 3px solid gray;
+}
+
+#body-cart-right {
+    font-size: 15px;
+    border-left: 3px solid gray;
+}
+
+.filters {
+    font-size: 15px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#change-password, #add-product, #your-sales, #orders, #ratings {
+    font-size: 15px;
+    border-right: 3px solid gray;
+}
+
+#customers, #resellers {
+    font-size: 15px;
+    border-right: 3px solid gray;
+}
+
+#your-phones, #product-image {
+    font-size: 15px;
+}
+
+#product-description {
+    font-size: 15px;
+    border-right: 3px solid gray;
+}
+
+#body-dashboard {
+    font-size: 15px;
+    height: 500px;
+}
+
+#customer, #reseller {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#body-shop-right, #body-cart {
+    font-size: 15px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.textbox {
+    border: 1px solid gray;
+}
+
+.reseller {
+    font-size: 15px;
+}
+
+#product-resellers {
+    height: 450px;
+    overflow-y: scroll;
+}
