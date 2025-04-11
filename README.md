@@ -10,10 +10,10 @@ Furthermore, this application features both Django and Selenium tests, as well a
 
 # How to run the application
 
-run pip install -r ./Implementacija/requirements.txt
+run `pip install -r ./Implementacija/requirements.txt`
 
-run python ./Implementacija/backend/manage.py collectstatic
+run `python ./Implementacija/backend/manage.py collectstatic`
 
-run python ./Implementacija/backend/manage.py runserver
+run `python ./Implementacija/backend/manage.py runserver`
 
-Use the application via any web browser on localhost:8000
+Use the application via any web browser at `http://localhost:8000`
